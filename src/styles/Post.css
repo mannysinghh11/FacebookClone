@@ -1,0 +1,33 @@
+.container{
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+	background-color: #ffffff;
+	border-radius: 15px;
+	padding: 10px 10px;
+	box-shadow: 0.1px 0.1px 5px black;
+	margin: 6px 0px;
+}
+
+.avatar{
+	width: 60px;
+	height: 60px;
+	border-radius: 99px;
+}
+
+.user{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.name{
+	font-weight: bold;
+	font-size: 18px;
+	padding: 0px 10px;
+}
+
+.post{
+	font-size: 18px;
+	padding: 5px 10px;
+}

@@ -1,0 +1,20 @@
+.container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-self: flex-start;
+	margin: 5px 10px;
+	margin-left: -10px;
+
+}
+
+.avatar{
+	width: 60px;
+	height: 60px;
+	border-radius: 99px;
+}
+
+.contactText{
+	font-family: sans-serif;
+	color: black;
+}

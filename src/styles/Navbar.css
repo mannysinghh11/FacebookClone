@@ -1,0 +1,83 @@
+.container{
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	box-shadow: 0.1px 0.1px 8px black;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.facebookLogo{
+	width: 40px;
+	margin: 10px 10px;
+}
+
+.search{
+	background-color: #f0f2f5;
+	border: none;
+	outline: none;
+}
+
+.searchContainer{
+	display: flex;
+	background-color: #f0f2f5;
+	padding: 10px 10px;
+	border-radius: 99px;
+	width: 220px;
+}
+
+.leftNavbar{
+	display: flex;
+	align-items: center;
+	padding: 5px 10px;
+}
+
+.middleIcon{
+	font-size: 50px;
+	padding: 0px 50px;
+	color: white;
+	stroke: #65676b;
+  	stroke-width: 1.2px;
+}
+
+.middleIcon:hover{
+	cursor: pointer;
+}
+
+.middleNavbar{
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+
+.rightIcon{
+	padding: 8px 8px;
+	margin: 0px 2px;
+	background-color: #e4e6eb;
+	border-radius: 99px;
+}
+
+.rightIcon:hover{
+	cursor: pointer;
+	background-color: #d8dadf;
+}
+
+.userInfo{
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	align-text: left;
+	padding: 0px 10px;
+}
+
+.rightNavbar{
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.tooltip{
+	font-family: sans-serif;
+}

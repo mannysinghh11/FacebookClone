@@ -1,0 +1,41 @@
+.container{
+	display: flex;
+	flex-direction: column;
+	height: 201px;
+}
+
+.container:hover{
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.previewImage{
+	z-index: -1;
+	height: 180;
+	width: 90px;
+	border-radius: 15px;
+	margin: 20px 8px;
+	box-shadow: 0.1px 0.1px 5px black;
+}
+
+.avatar{
+	position: absolute;
+	z-index: 2;
+	height: 50px;
+	border-radius: 100px;
+	border: 3px solid #1d73e7;
+	top: 90px;
+	margin-left: 20px;
+}
+
+.storyText{
+	position: absolute;
+	z-index: 2;
+	align-self: center;
+	top: 220px;
+	color: white;
+	font-family: sans-serif;
+	font-size: 15px;
+	text-shadow: 1px 1px 5px black;
+	word-wrap: break-word;
+}
