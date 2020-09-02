@@ -31,3 +31,28 @@
 	font-size: 18px;
 	padding: 5px 10px;
 }
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	color: #65676b;
+}
+
+.iconHolder{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	border-radius: 15px;
+}
+
+.iconHolder:hover{
+	cursor: pointer;
+	background-color: #f2f2f2;
+}
+
+.icon{
+	padding: 5px 5px;
+}
