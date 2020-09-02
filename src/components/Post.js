@@ -15,7 +15,7 @@ class Post extends React.Component {
     return(
     	<div className = {styles.container}>
             <div className = {styles.user}>
-        		<img src = {profilePicture2} className = {styles.avatar}/>
+        		<img src = {this.props.avatar} className = {styles.avatar}/>
                 <p className = {styles.name}>{this.props.fullName}</p>
             </div>
 

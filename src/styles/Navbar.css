@@ -81,3 +81,9 @@
 .tooltip{
 	font-family: sans-serif;
 }
+
+.avatar{
+	width: 40px;
+	border-radius: 999px;
+	margin-right: 10px;
+}

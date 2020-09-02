@@ -24,7 +24,7 @@ class SidebarLink extends React.Component {
       //Render User info
       return(
         <div className = {styles.container}>
-          <AccountBoxIcon className = {styles.icon} style={{ fontSize: 35 }}/>
+          <img src = {this.props.avatar} className = {styles.avatar}/>
           <p className = {styles.text}>{this.props.fullName}</p>
         </div>
       );

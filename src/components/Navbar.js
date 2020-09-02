@@ -20,6 +20,12 @@ import styles from '../styles/Navbar.css'
 class Navbar extends React.Component {
 	constructor(props){
 		super(props);
+
+		this.logout = this.logout.bind(this);
+	}
+
+	logout(){
+		this.props.updatePage("login");
 	}
 
   render() {
@@ -51,8 +57,8 @@ class Navbar extends React.Component {
 
 	        <div className = {styles.rightNavbar}>
 	        	<div className = {styles.userInfo}>
-		        	<AccountBoxIcon style={{ fontSize: 25 }} />
-		        	<p>Manpreet Singh</p>
+		        	<img src = {this.props.avatar} className = {styles.avatar}/>
+		        	<p>{this.props.givenName} {this.props.familyName}</p>
 		        </div>
 
 		        <ReactTooltip id = "createTooltip" effect = "solid" className = {styles.tooltip}>Create</ReactTooltip>
@@ -63,7 +69,7 @@ class Navbar extends React.Component {
 	        	<AddCircleIcon data-tip data-for="createTooltip" style={{ fontSize: 25 }} className = {styles.rightIcon}/>
 	        	<ChatIcon data-tip data-for="messengerTooltip" style={{ fontSize: 25 }} className = {styles.rightIcon}/>
 	        	<NotificationsIcon data-tip data-for="notificationsplaceTooltip" style={{ fontSize: 25 }} className = {styles.rightIcon}/>
-	        	<ArrowDropDownCircleIcon data-tip data-for="accountTooltip" style={{ fontSize: 25 }} className = {styles.rightIcon}/>
+	        	<ArrowDropDownCircleIcon data-tip data-for="accountTooltip" style={{ fontSize: 25 }} className = {styles.rightIcon} onClick={this.logout}/>
 	        </div>
 
 

@@ -13,7 +13,7 @@ class Sidebar extends React.Component {
   render() {
     return(
     	<div className = {styles.container}>
-    		<SidebarLink title = "Account" fullName = "Manpreet Singh" icon = "AccountBoxIcon"/>
+    		<SidebarLink title = "Account" fullName = {this.props.givenName + " " + this.props.familyName} icon = "AccountBoxIcon" avatar = {this.props.avatar}/>
             <SidebarLink title = "Friends" icon = "SupervisorAccountIcon"/>
             <SidebarLink title = "Groups" icon = "GroupAddIcon"/>
             <SidebarLink title = "Marketplace" icon = "StorefrontIcon"/>
